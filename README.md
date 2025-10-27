@@ -137,7 +137,8 @@ Thilak Rajkumar
 
 
 🌟 Support
+
 If you found Sentx useful or cool, please consider giving it a ⭐ on GitHub —
 It helps others discover this project and keeps me motivated to build more cyber tools!
 
-<p align="center"> <img src="https://media.tenor.com/Jb9u3zvZDhAAAAAC/hacker-anonymous.gif" width="300"> </p>  ```
+<p align="center"> <img src="https://media.tenor.com/Jb9u3zvZDhAAAAAC/hacker-anonymous.gif" width="300"> </p> ```
