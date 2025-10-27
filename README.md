@@ -4,22 +4,25 @@
 ```bash
 git clone https://github.com/<your-username>/Sentx.git
 cd Sentx
+```
 
 ### 2️⃣ Install Dependencies
-
+```bash
 pip install -r requirements.txt
-
+```
 
 ### 3️⃣ Add Your VirusTotal API Key
 
 Open config.py (or directly in your File_scanner.py / Url_scanner.py) and replace:
-
+```bash
 API_KEY = "e12e81636979414f0e10cf787195adcfca205062c460746db33dd0cffbce42ea"
-
+```
 
 ### 4️⃣ Run the Application
 
+```bash
 python app.py
+```
 
 ### 5️⃣ Access the Web App
 Visit:
