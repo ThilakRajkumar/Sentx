@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Scan Result</h1>
+
+        {% if url %}
+            <p><strong>URL:</strong> {{ url }}</p>
+        {% else %}
+            <p><strong>Filename:</strong> {{ result.filename }}</p>
+        {% endif %}
+
+        <p><strong>Detected:</strong> {{ result.detected }} / {{ result.total_vendors }}</p>
+
+        {% if result.scan_report %}
+        <div class="results-box">
+            <h2>Detailed Report</h2>
+            <ul>
+                {% for engine, details in result.scan_report.items() %}
+                    <li class="{{ 'malicious' if details['category'] == 'malicious' else 'safe' }}">
+                        <span class="vendor">{{ engine }}</span>
+                        <span class="result">{{ details['result'] or 'Clean' }}</span>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        <a href="/" class="back-link">Back to Home</a>
+    </div>
+</body>
+</html>

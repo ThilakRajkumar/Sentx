@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malware Detection Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="cyber-grid">
+        <div class="container">
+            <h1 class="cyber-title">⚡ Cyber Malware Detection ⚡</h1>
+            <h2 class="cyber-subtitle">Scan Files or URLs for Threat Intelligence</h2>
+
+            <!-- File Upload Form -->
+            <form action="/upload" method="post" enctype="multipart/form-data" class="cyber-form">
+                <div class="form-group">
+                    <input type="file" name="file" id="file-upload" required>
+                    <button type="submit" class="cyber-button">Scan File</button>
+                </div>
+            </form>
+
+            <!-- URL Scan Form -->
+            <form action="/scan_url_endpoint" method="post" class="cyber-form">
+                <div class="form-group">
+                    <input type="text" name="url" placeholder="Enter URL" id="url-input" required>
+                    <button type="submit" class="cyber-button">Scan URL</button>
+                </div>
+            </form>
+
+            {% if error %}
+            <p class="error">{{ error }}</p>
+            {% endif %}
+
+            {% if results %}
+            <div class="results-box">
+                <h3>Scan Results</h3>
+                <p><strong>URL:</strong> {{ results.url }}</p>
+                <p><strong>Detected:</strong> {{ results.detected }}</p>
+
+                <ul>
+                    {% for vendor, result in results.vendors.items() %}
+                    <li class="{{ 'malicious' if 'malicious' in result|lower else 'safe' }}">
+                        <span class="vendor">{{ vendor }}</span>
+                        <span class="result">{{ result }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
