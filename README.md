@@ -44,7 +44,7 @@ Sentx/
 
 
 🧪 Screenshots
-<p align="center"> <img src="screenshots/success_file_scan.png" width="80%" alt="Sentx File Scan Result"> <br><i>📂 File Scan - Detected Malware highlighted in red</i> </p> <p align="center"> <img src="screenshots/success_url_scan.png" width="80%" alt="Sentx URL Scan Result"> <br><i>🌐 URL Scan - Verified clean or malicious links instantly</i> </p>
+<p align="center"> <img src="screenshots/success_file_scan.png.jpeg" width="80%" alt="Sentx File Scan Result"> <br><i>📂 File Scan - Detected Malware highlighted in red</i> </p> <p align="center"> <img src="screenshots/success_url_scan.png.jpeg" width="80%" alt="Sentx URL Scan Result"> <br><i>🌐 URL Scan - Verified clean or malicious links instantly</i> </p>
 
 
 🔑 API Details
