@@ -1,3 +1,49 @@
+<h1 align="center">⚔️ SENTX - AI Powered Malware & URL Threat Scanner</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Language-Python-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Framework-Flask-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Powered%20By-VirusTotal-red?style=for-the-badge">
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge">
+</p>
+
+<p align="center">
+  <b>Sentx</b> is a next-generation malware and URL scanner that integrates with the VirusTotal API to detect and visualize potential threats in real-time.<br>
+  A perfect blend of <b>cyber defense aesthetics</b> and <b>intelligent threat analysis</b>.
+</p>
+
+---
+
+## 🚀 Overview
+
+**Sentx** is a modern, web-based malware scanner built using **Flask (Python)**.  
+It allows users to upload suspicious files or URLs, scans them through **VirusTotal’s cloud engine**, and displays detection results in an elegant cyber-inspired UI.
+
+Whether you’re a cybersecurity researcher, student, or enthusiast — **Sentx** makes threat intelligence simple, fast, and stylish. ⚡
+
+---
+
+## 🧩 Features
+
+✨ **Dual Scan Mode**  
+Scan both files and URLs with a single click.  
+
+🧠 **VirusTotal Integration**  
+Uses your VirusTotal API key to get accurate malware verdicts.  
+
+🎨 **Cyber-Themed UI**  
+Beautiful, dark cyberpunk-style design inspired by VirusTotal’s layout.  
+
+📊 **Real-Time Results**  
+Highlights detected vendors in **red**, and safe ones in **green**.  
+
+🌐 **Cross-Platform**  
+Runs smoothly on **Windows**, **macOS**, and **Linux**.  
+
+---
+
+
+
 ## ⚙️ Installation
 
 ### 1️⃣ Clone the Repository
